@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2><i class="logo-icon">👥</i> Employee Management System</h2>
+    <ul>
+      <li class="active">🏠 Dashboard</li>
+      <li>👨‍💼 Employees</li>
+      <li>🏢 Departments</li>
+      <li>💼 Positions</li>
+      <li>💰 Salaries</li>
+      <li>📅 Leaves</li>
+      <li>📊 Reports</li>
+      <li>⚙️ Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="top-bar">
+      <button id="addEmployee">+ Add Employee</button>
+      <input type="text" placeholder="Search employees...">
+    </div>
+
+    <h2 class="dashboard-title">📊 Dashboard</h2>
+
+    <div class="cards">
+      <div class="card blue">
+        <h3>Total Employees</h3>
+        <p id="totalEmployees">10</p>
+      </div>
+      <div class="card green">
+        <h3>Active Employees</h3>
+        <p id="activeEmployees">8</p>
+      </div>
+      <div class="card orange">
+        <h3>Departments</h3>
+        <p id="departments">5</p>
+      </div>
+      <div class="card purple">
+        <h3>Positions</h3>
+        <p id="positions">5</p>
+      </div>
+      <div class="card red">
+        <h3>Pending Leaves</h3>
+        <p id="pendingLeaves">2</p>
+      </div>
+    </div>
+
+    <div class="recent">
+      <h3>Recent Activity</h3>
+      <p>📅 Leave record for Sk Mohd Tanveer was updated</p>
+      <small>04/10/2025 08:30 PM</small>
+    </div>
+
+    <h3 class="emp-title">👨‍💼 Employee List</h3>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Position</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Employees added by JS -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
